@@ -1,0 +1,25 @@
+/* Paramètre du CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{        
+    background-color: #eee;
+}
+
+a:link{
+    text-decoration: none;
+    /* color: rgba(255, 255, 255, 0.877); */
+}
+a:visited{
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+}
+
+/* ----------------------------------------------Nav (menu)---------------------------------------------- */
