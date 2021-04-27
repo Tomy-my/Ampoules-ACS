@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
+        <link rel="icon" href="img/logo/favicon.png" />
 		<title>Ampoule - Dashboard : <?php echo $titre; ?></title>
 	</head>
     <body>
