@@ -2,7 +2,7 @@
 
 try
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=amploues;charset=utf8', 'root', '');     // Je me connecte en PDO à ma base de donnée MySql
+        $bdd = new PDO('mysql:host=localhost;dbname=ampoules;charset=utf8', 'root', '');     // Je me connecte en PDO à ma base de donnée MySql
     }
 
 catch (Exception $e)     // Si il y a une erreur
