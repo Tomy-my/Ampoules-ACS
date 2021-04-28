@@ -1,5 +1,14 @@
+/* Adieu text de présenstation */
+@media only screen and (max-width : 1745px){  
+    .prst, .social, hr#footer{
+        display: none;
+    }
+}
+
+
+
 /* Limite avant rupture du menu Left to Top */
-@media only screen and (max-width : 1206px){            
+@media only screen and (max-width : 1240px){            
     nav{
         flex-direction: row;
         justify-content: space-around;
@@ -17,11 +26,16 @@
     .listing_menu li#home{
         padding-left: 0px;
         background-color: rgba(255, 255, 255, 0);
+        border: none;
     }
 
     #logo{
         width: 50px;
         margin-top: 15px;
+    }
+
+    .listing_menu hr{
+        display: none;
     }
 }
 
@@ -56,17 +70,15 @@
 
     .menu_burger{
         display: flex;
-        flex-direction: column;
-
-
     }
     .menu_burger a{
-        margin-right: 0px;
+        margin-top: 30px;
     }
 
     .menu_burger hr{
         width: 40px;
         height: 3px;
+        margin-bottom: 5px;
 
         background-color: white;
     }
@@ -78,6 +90,7 @@
     burger:target{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         position: absolute;
 
         height: 90vh;
@@ -90,6 +103,7 @@
 
         background-color: #0d0d0dcf;
     }
+
     
     .menu_burger li{
         margin-top: 60px;
@@ -109,5 +123,8 @@
         margin-right: 10px;
 
         color: #e3e3e3;
+}
+#logo{
+    margin-right: 20px;
 }
 }
