@@ -37,7 +37,17 @@
     .listing_menu hr{
         display: none;
     }
+
+    .container_form{
+        position: static;
+
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 }
+
 
 
 /* Limite avant activation du secondaire menu */
