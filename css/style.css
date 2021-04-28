@@ -15,11 +15,108 @@ body{
 
 a:link{
     text-decoration: none;
-    /* color: rgba(255, 255, 255, 0.877); */
+    color: rgba(255, 255, 255, 0.877);
 }
 a:visited{
     text-decoration: none;
-    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
 }
 
-/* ----------------------------------------------Nav (menu)---------------------------------------------- */
+/* ----------------------------------------------Nav Left to Top---------------------------------------------- */
+
+nav{
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+    height: 100vh;
+    background-color: #354052;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.71)
+}
+
+.listing_menu{
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo{
+    display: block;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.listing_menu li{
+    margin-top: 60px;
+    margin-left: 20px;
+
+    font-size: 18px;
+    list-style: none;
+}
+
+.listing_menu i{
+    margin-right: 10px;
+
+    color: #e3e3e3;
+}
+
+.listing_menu li#home{
+
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: -30px;
+    padding-left: 20px;
+    background-color: #4f5e77;
+    
+}
+
+li#home i{
+    padding-top: 21px;
+}
+
+/* ----------------------------------------------Nav Menu secondaire---------------------------------------------- */
+
+.listing_menu_secondaire{
+    display: none;
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.listing_menu_secondaire li{
+    display: inline;
+
+    margin-left: 45px;
+    margin-top: 60px;
+
+    font-size: 18px;
+    list-style: none;
+}
+
+.listing_menu_secondaire i{
+    margin-right: 10px;
+
+    color: #e3e3e3;
+}
+
+.petit_bloc1, .petit_bloc2{
+    margin-bottom: 5px;
+}
+
+.listing_menu_secondaire ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.petit_bloc1{
+    margin-top: 5px;
+}
+/* ----------------------------------------------Nav BurgerMenu---------------------------------------------- */
+
+.menu_burger{
+    display: none;
+}
