@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/boutton.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
         <link rel="icon" href="img/logo/favicon.png" />
@@ -75,15 +76,4 @@
                     </ul>
                 </burger>
             </div>
-
-
-
-
-
-
-
-
-
-
-
         </nav>

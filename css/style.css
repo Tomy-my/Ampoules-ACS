@@ -106,12 +106,16 @@ li#history:hover, li#reseau:hover, li#incident:hover, li#bug:hover{
     margin-left: 35px;
 }
 
+li#history:hover i, li#reseau:hover i, li#incident:hover i, li#bug:hover i{
+    color: white;
+}
+
 li#home:hover{
     background-color: #212835;
 }
 
 .prst h1{
-    margin-top: 10px;
+    margin-top: 35px;
     margin-left: 24px;
 
     font-size: 30px;
@@ -159,7 +163,7 @@ a#lock i:hover{
 }
 
 .listing_menu hr#footer{
-    margin-top: 20px;
+    margin-top: 36px;
     border: none;
     border-bottom: solid 2px #262626;
 }
@@ -222,8 +226,6 @@ a#lock i:hover{
     margin-top: -100vh;
     margin-left: 15vw;
 
-    /* background-color: green; */
-
     z-index: 2;
 }
 
@@ -271,5 +273,67 @@ a#lock i:hover{
 }
 .bandeau h1 i{
     font-size: 26px;
-    color: #FFDD96;
+    color: #FFE8B8;
+}
+
+/* --------Index Form add-------- */
+form.add{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_form input{
+    width: 44%;
+    height: 50px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: solid 1px rgb(134, 134, 134);
+
+    background-color: #fff0;
+
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(134, 134, 134);
+}
+
+.container_form input:focus{
+    border-bottom: none;
+    border-color: #212835;
+}
+
+h1#titre{
+    margin-bottom: 2px;
+    margin-left: 40px;
+
+
+    font-size: 17px;
+    color: #757575;
+}
+h1#titre_sp{
+    margin-bottom: 8px;
+    margin-left: 40px;
+
+    font-size: 17px;
+    color: #757575;
+}
+
+
+button.send{
+    display: block;
+    width: 185px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background-color: #ff6a00;
+
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+input.prix{
+    padding-left: 10px;
 }
