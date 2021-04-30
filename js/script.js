@@ -95,13 +95,6 @@
   })();
 
 
-
-
-
-
-
-
-
 // Bloquer des caractères 
   function verif(evt) {
     var keyCode = evt.which ? evt.which : evt.keyCode;
@@ -114,8 +107,7 @@
 }
 
 
-
-
+//popUp
 function myFunction() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
@@ -127,3 +119,17 @@ function myFunction() {
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
+
+// Merci Nina !!
+// Lummière qui s'allume à l'envoie des données
+let monBouton = document.querySelector(".send");
+let monElement = document.querySelector(".amp i");
+monBouton.addEventListener("click", function() {
+monElement.style.color = "#b51eff";
+monElement.style.transition = "all 1s cubic-bezier(1,1.07,.81,.01) 0s";
+
+  setTimeout(function() {
+    monElement.style.color = "#354052";
+    monElement.style.transition = "all 0.7s ease";
+    }, 6000);
+})

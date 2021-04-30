@@ -4,9 +4,7 @@ $titre = "Home";   //Je nomme le titre de la page
 
 include('header.php');  //J'ammène la page header
 
-include('controller/formulaire.php')
 ?>
-
 
 <div class="container_form">
     <div class="add_form">
@@ -15,16 +13,16 @@ include('controller/formulaire.php')
         </div>
         <div class="int">
             <div class="gauche">
-                <form class="add" action="index.php" method="post">
+                <form class="add" method="POST" onsubmit="return sendData();">
                     
                     <h1 id="titre">Précisez la date d'ajout de l'ampoule</h1>
-                    <input class="date" type="date" id="start" name="date_lekki" value="2021-04-28" min="2021-01-01" max="2030-12-31">
+                    <input class="date" type="date" id="date" name="date" value="2021-04-28">
                     
                     <h1 id="titre_sp">Indiqué l'étage</h1>
                     <div class='ctrl'>
                         <div class='ctrl__button ctrl__button--decrement'>&ndash;</div>
                         <div class='ctrl__counter'>
-                            <input class='ctrl__counter-input' name="upstairs" maxlength='10' type='text' value='0'>
+                            <input class='ctrl__counter-input' name="upstairs" id="upstairs" maxlength='10' type='text' value='0'>
                             <div class='ctrl__counter-num'>0</div>
                         </div>
                         <div class='ctrl__button ctrl__button--increment'>+</div>
@@ -32,7 +30,7 @@ include('controller/formulaire.php')
                     
                     <h1 id="titre_sp">Où se situe l'ampoule ?</h1>
                     <div class="select">
-                        <select  id="slct" name="position">
+                        <select  id="position" name="position">
                             <option selected disabled>Veuillez choisir une option</option>
                             <option value="Left">Côté Gauche</option>
                             <option value="Right">Côté Droit</option>
@@ -42,12 +40,12 @@ include('controller/formulaire.php')
                     </div>
                     
                     <h1 id="titre">Définissait le prix</h1>
-                    <input class="prix" type="text" onkeypress="return verif(event);" name="price" placeholder="€">           
+                    <input class="prix" type="text" onkeypress="return verif(event);" name="price" id="price" placeholder="€">           
             </div>
             <div class="droite">
                 <div class="amp">
                     <i class="far fa-lightbulb"></i>
-                    <button class="send">Allumer !</button>
+                    <button class="send" onclick="myFunction()">Allumer !</button>
                     <div id="snackbar">Some text some message..</div>
                 </div>
             </form>
@@ -61,7 +59,34 @@ include('controller/formulaire.php')
         </div>
     </div>
 </div>
+<div id="res" ></div>
+
 
 
 
 <script type="text/javascript" src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function sendData()
+{
+  var date = document.getElementById("date").value;
+  var upstairs = document.getElementById("upstairs").value;
+  var position = document.getElementById("position").value;
+  var price = document.getElementById("price").value;
+  $.ajax({
+    type: 'post',
+    url: 'controller/formulaire.php',
+    data: {
+      date:date,
+      upstairs:upstairs,
+      position:position,
+      price:price
+    },
+    success: function (response) {
+      $('#res').html("");
+    }
+  });
+    
+  return false;
+}
+    </script>

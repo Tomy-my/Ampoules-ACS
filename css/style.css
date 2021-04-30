@@ -371,8 +371,4 @@ input.prix{
     font-size: 230px;
     color: #354052;
 
-    transition-duration: 0.5s;
-}
-.amp i:hover{
-    color: #b51eff;
 }
