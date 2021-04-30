@@ -46,7 +46,6 @@ include('header.php');  //J'ammène la page header
                 <div class="amp">
                     <i class="far fa-lightbulb"></i>
                     <button class="send" onclick="myFunction()">Allumer !</button>
-                    <div id="snackbar">Some text some message..</div>
                 </div>
             </form>
             </div>
@@ -59,34 +58,10 @@ include('header.php');  //J'ammène la page header
         </div>
     </div>
 </div>
+
 <div id="res" ></div>
+<div id="snackbar">Ajout d'ampoule réussi</div>
 
-
-
-
-<script type="text/javascript" src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      function sendData()
-{
-  var date = document.getElementById("date").value;
-  var upstairs = document.getElementById("upstairs").value;
-  var position = document.getElementById("position").value;
-  var price = document.getElementById("price").value;
-  $.ajax({
-    type: 'post',
-    url: 'controller/formulaire.php',
-    data: {
-      date:date,
-      upstairs:upstairs,
-      position:position,
-      price:price
-    },
-    success: function (response) {
-      $('#res').html("");
-    }
-  });
-    
-  return false;
-}
-    </script>
+<?php
+include('footer.php');
+?>

@@ -18,11 +18,11 @@
                 <img id="logo" src="img/logo/Logo.svg" alt="Logo du site">
                 <ul>
                     <li id="home"><i class="fas fa-home"></i> <a href="index.php">Tableau de bord</a></li>
-                    <li id="history"><i class="fas fa-history"></i> <a href="index.php">Historique</a></li>
+                    <li id="history"><i class="fas fa-history"></i> <a href="history.php">Historique</a></li>
                     <li id="reseau"><i class="fas fa-wifi"></i> <a href="index.php">Réseau</a></li>
                     <li id="incident"><i class="fas fa-exclamation-triangle"></i> <a href="index.php">Incident</a></li>
                     <li id="bug"><i class="fas fa-bug"></i> <a href="index.php">Bug</a></li>
-                    <li><i class="fas fa-power-off"></i> <buttoun id="deconnexion">Déconnexion</buttoun> </li>
+                    <li id="deco"><i class="fas fa-power-off"></i> <buttoun id="deconnexion">Déconnexion</buttoun> </li>
                 </ul>
                 <hr>
                 <div class="prst">

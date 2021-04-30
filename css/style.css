@@ -1,5 +1,4 @@
 /* Paramètre du CSS */
-
 *{
     margin: 0;
     padding: 0;
@@ -31,7 +30,9 @@ nav{
     width: 15%;
     height: 100vh;
     background-color: #354052;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.71)
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+
+    z-index: 10;
 }
 
 .listing_menu{
@@ -90,10 +91,16 @@ li#bug{
     width: 65px;
     transition-duration: 0.4s;
 }
-
+li#deco {
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
 
 li#home i{
     padding-top: 21px;
+}
+li#deco i{
+    transition-duration: 0.4s;
 }
 
 .listing_menu hr{
@@ -102,7 +109,7 @@ li#home i{
     border-bottom: solid 2px #262626;
 }
 
-li#history:hover, li#reseau:hover, li#incident:hover, li#bug:hover{
+li#history:hover, li#reseau:hover, li#incident:hover, li#bug:hover, li#deco:hover{
     margin-left: 35px;
 }
 
@@ -112,6 +119,9 @@ li#history:hover i, li#reseau:hover i, li#incident:hover i, li#bug:hover i{
 
 li#home:hover{
     background-color: #212835;
+}
+li#deco:hover i{
+    color: #ff3131;
 }
 
 .prst h1{
@@ -232,7 +242,7 @@ a#lock i:hover{
 .add_form{
     width: 45%;
     height: 65%;
-    margin-top: 40px;
+    margin-top: 5vh;
     margin-left: 25px;
 
     background-color: rgba(251, 251, 251, 0.81);
@@ -244,7 +254,7 @@ a#lock i:hover{
 .mod_form{
     width: 45%;
     height: 65%;
-    margin-top: 280px;
+    margin-top: 30vh;
     margin-right: 25px;
 
     background-color: rgba(251, 251, 251, 0.81);
@@ -339,7 +349,6 @@ h1#titre_sp{
     color: #757575;
 }
 
-
 button.send{
     display: block;
     width: 185px;
@@ -353,6 +362,8 @@ button.send{
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: white;
+
+    cursor: pointer;
 }
 
 input.prix{
@@ -370,5 +381,40 @@ input.prix{
     
     font-size: 230px;
     color: #354052;
+}
 
+/* ----------------------------------------------History---------------------------------------------- */
+
+#history .container_form{
+    flex-direction: column;
+}
+
+.history_container{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: rgba(251, 251, 251, 0.81);
+    border-radius: 25px;
+    box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.71);
+
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+
+.history_container .bandeau{
+    position: fixed;
+    width: 76.5vw;
+    height: 10%;
+    border-top-right-radius: 0px;
+}
+
+.haut_tableau {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 4%;
+    margin-top: 10%;
+    background-color: #212835;
+    color: white;
 }

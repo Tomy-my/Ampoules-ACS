@@ -1,3 +1,28 @@
+// scrip ajax no refresh page au moment de l'envoie des données du formulaire
+function sendData()
+{
+  var date = document.getElementById("date").value;
+  var upstairs = document.getElementById("upstairs").value;
+  var position = document.getElementById("position").value;
+  var price = document.getElementById("price").value;
+  $.ajax({
+    type: 'post',
+    url: 'controller/formulaire.php',
+    data: {
+      date:date,
+      upstairs:upstairs,
+      position:position,
+      price:price
+    },
+    success: function (response) {
+      $('#res').html("");
+    }
+  });
+    
+  return false;
+}
+
+
 // Template du boutton number url : https://www.cssscript.com/animated-input-spinner-pure-javascript-csscss3/
 (function() {
     'use strict';
