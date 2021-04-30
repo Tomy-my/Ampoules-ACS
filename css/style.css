@@ -276,6 +276,25 @@ a#lock i:hover{
     color: #FFE8B8;
 }
 
+.int{
+    display: flex;
+
+    width: 100%;
+    height: 87%;
+}
+
+.gauche{
+    width: 100%;
+}
+
+.droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+}
+
 /* --------Index Form add-------- */
 form.add{
     margin-top: 20px;
@@ -283,7 +302,7 @@ form.add{
 }
 
 .container_form input{
-    width: 44%;
+    width: 65%;
     height: 50px;
     margin-left: 40px;
     margin-bottom: 50px;
@@ -293,13 +312,15 @@ form.add{
     background-color: #fff0;
 
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(134, 134, 134);
 }
 
 .container_form input:focus{
-    border-bottom: none;
+    outline: none;
     border-color: #212835;
+    border-bottom: solid 1px rgb(134, 134, 134);
+
 }
 
 h1#titre{
@@ -327,13 +348,31 @@ button.send{
     margin-right: auto;
     border: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    background-color: #ff6a00;
+    background-color: #b51eff;
 
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 input.prix{
+    width: 62%;
     padding-left: 10px;
+}
+
+.amp{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.amp i{
+    margin-bottom: 115px;
+    
+    font-size: 230px;
+    color: #354052;
+
+    transition-duration: 0.5s;
+}
+.amp i:hover{
+    color: #b51eff;
 }
