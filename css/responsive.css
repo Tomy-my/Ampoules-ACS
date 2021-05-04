@@ -39,12 +39,28 @@
     }
 
     .container_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
         position: static;
 
         width: 100vw;
         height: 100vh;
         margin-top: 0px;
         margin-left: 0px;
+    }
+
+    .add_form{
+        width: 77%;
+        margin: auto;
+        margin-top: 55vh;
+    }
+
+    .mod_form{
+        width: 77%;
+        margin: auto;
+        margin-top: 9vh;
     }
 }
 
@@ -133,8 +149,87 @@
         margin-right: 10px;
 
         color: #e3e3e3;
+    }
+
+    #logo{
+        margin-right: 20px;
+    }
+
+    .add_form, .mod_form{
+        width: 95%;
+    }
 }
-#logo{
-    margin-right: 20px;
-}
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    .add_form{
+        height: 71%;
+        margin-top: 80vh;
+        padding-bottom: 65px;
+    }
+
+    .mod_form{
+        margin-top: 5vh;
+    }
+    
+    .droite{
+        display: none;
+    }
+
+    button.send_tel{
+        display: block;
+        width: 185px;
+        height: 50px;
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        background-color: #ab00ff;
+    
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    
+        cursor: pointer;
+    
+        transition-duration: 0.4s;
+    }
+    button.send_tel:focus{
+        background-color: #ab00ff;
+    }
+
+    #ghost{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+    }
+
+    burger:target{
+        position: fixed;
+
+        background-color: #354052;
+        border-top: solid 1px white;
+
+        z-index: 10;
+    }
+
+    #blanc{
+        margin-top: 56vh;
+        height: 100px;
+        background-color: #eee;
+    }
+
+    .history_container{
+        width: 95%;
+        height: 80vh;
+        margin-top: 15vh;
+    }
+
+    .history_container .bandeau h1{
+        margin-left: 70px;
+    }
 }

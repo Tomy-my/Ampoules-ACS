@@ -123,7 +123,7 @@ function sendData()
 // Bloquer des caractères 
   function verif(evt) {
     var keyCode = evt.which ? evt.which : evt.keyCode;
-    var accept = '0123456789,.';
+    var accept = '0123456789.';
     if (accept.indexOf(String.fromCharCode(keyCode)) >= 0) {
         return true;
     } else {
@@ -158,3 +158,23 @@ monElement.style.transition = "all 1s cubic-bezier(1,1.07,.81,.01) 0s";
     monElement.style.transition = "all 0.7s ease";
     }, 6000);
 })
+
+
+
+
+
+// Help price
+let help = document.querySelector("h1 i");
+let ghost = document.querySelector("#ghost");
+help.addEventListener("click", function() {
+ghost.style.marginTop = "-45px";
+ghost.style.opacity = "1";
+ghost.style.transition = "all 1s ease";
+
+  setTimeout(function() {
+    ghost.style.opacity = "0";
+    ghost.style.marginTop = "-10px";
+    ghost.style.transition = "all 1s ease";
+    }, 3000);
+})
+

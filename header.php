@@ -18,7 +18,7 @@
                 <img id="logo" src="img/logo/Logo.svg" alt="Logo du site">
                 <ul>
                     <li id="home"><i class="fas fa-home"></i> <a href="index.php">Tableau de bord</a></li>
-                    <li id="history"><i class="fas fa-history"></i> <a href="history.php">Historique</a></li>
+                    <li id="history"><i class="fas fa-tools"></i> <a href="edit.php">Modification</a></li>
                     <li id="reseau"><i class="fas fa-wifi"></i> <a href="index.php">Réseau</a></li>
                     <li id="incident"><i class="fas fa-exclamation-triangle"></i> <a href="index.php">Incident</a></li>
                     <li id="bug"><i class="fas fa-bug"></i> <a href="index.php">Bug</a></li>
@@ -46,12 +46,12 @@
                 <ul>
                     <div class="petit_bloc1">
                         <li><i class="fas fa-home"></i> <a href="index.php">Tableau de bord</a></li>
-                        <li><i class="fas fa-history"></i> <a href="index.php">Historique</a></li>
-                        <li><i class="fas fa-wifi"></i> <a href="index.php">Réseau</a></li>
+                        <li><i class="fas fa-history"></i> <a href="edit.php">Modification</a></li>
+                        <li><i class="fas fa-wifi"></i> <a href="#">Réseau</a></li>
                     </div>
                     <div class="petit_bloc2">
-                        <li><i class="fas fa-exclamation-triangle"></i> <a href="index.php">Incident</a></li>
-                        <li><i class="fas fa-bug" style="padding-left: 63px;"></i> <a href="index.php">Bug</a></li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <a href="#">Incident</a></li>
+                        <li><i class="fas fa-bug" style="padding-left: 63px;"></i> <a href="#">Bug</a></li>
                         <li><i class="fas fa-power-off" style="padding-left: 52px;"></i> <buttoun id="deconnexion">Déconnexion</buttoun> </li>
                     </div>
                 </ul>
@@ -66,11 +66,11 @@
                 </a>
                 <burger id="burger_menu">
                     <ul>
-                        <li style="margin-top: -80px;"><i class="fas fa-home"></i> <a href="index.php">Tableau de bord</a></li>
-                        <li style="padding-right: 46px;"><i class="fas fa-history"></i> <a href="index.php">Historique</a></li>
-                        <li style="padding-right: 70px;"><i class="fas fa-wifi"></i> <a href="index.php">Réseau</a></li>
-                        <li style="padding-right: 63px;"><i class="fas fa-exclamation-triangle"></i> <a href="index.php">Incident</a></li>
-                        <li style="padding-right: 93px;"><i class="fas fa-bug"></i> <a href="index.php">Bug</a></li>
+                        <li style="margin-top: -130px; margin-left: -17px;"><i class="fas fa-home"></i> <a href="index.php">Tableau de bord</a></li>
+                        <li style="padding-right: 46px;"><i class="fas fa-history"></i> <a href="edit.php">Modification</a></li>
+                        <li style="padding-right: 70px;"><i class="fas fa-wifi"></i> <a href="#">Réseau</a></li>
+                        <li style="padding-right: 63px;"><i class="fas fa-exclamation-triangle"></i> <a href="#">Incident</a></li>
+                        <li style="padding-right: 93px;"><i class="fas fa-bug"></i> <a href="#">Bug</a></li>
                         <li style="padding-right: 20px;"><i class="fas fa-power-off"></i> <buttoun id="deconnexion">Déconnexion</buttoun> </li>
                         <li><i class="fas fa-times"></i> <a href="#">Quitter le menu</a></li>
                     </ul>
