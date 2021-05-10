@@ -6,7 +6,7 @@ include('header.php');  //J'ammène la page header
 
 include('controller/formulaire.php');
 
-$reponse = $bdd->query('SELECT * FROM data ORDER BY date DESC LIMIT 15');  //Requette SQL qui dit affiche tout de la base DATA par date d'ajout la plus récente
+$reponse = $bdd->query('SELECT * FROM data ORDER BY id DESC LIMIT 15');  //Requette SQL qui dit affiche tout de la base DATA par date d'ajout la plus récente
 ?>
 
 <div class="container_form">
